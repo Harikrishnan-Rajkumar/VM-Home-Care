@@ -1,0 +1,191 @@
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.jobs-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.card-title{
+    font-size: 1.8rem;
+    padding-top: 10vw;
+    text-align: right;
+}
+.c-img{
+    height: 75vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+}
+.c1{    
+    background-image: url(1738256713304.jpg);
+}
+.c2{
+    background-image: url(1741880652907.jpg);
+    background-position: center top;
+}
+.c3{
+    background-image: url(c301.png);
+    background-position: center top;
+}
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+.carousel-item {
+    transition: transform 1s ease-out;
+    flex-shrink: 0;  
+    width: 100%;    
+  }
+.navbar-nav{
+    margin-left: auto;
+}
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 13.5rem;
+}
+.card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    .card-title{        
+        color: red;
+        font-size: 1.9rem;
+    }
+}
+.nav-link{
+    color: white;
+}
+main{
+    padding-top: 10vh;
+}
+.jobs-card{
+    padding-top: 5vh;
+}
+.social-links-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-title{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+.whatsapp-floating-container{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+    background: #25D366;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+.whatsapp-floating-container:hover{
+    transform: scale(1.1);
+}
+.navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+    background: #212529;
+    opacity: 1;
+}
+.dropdown-item{
+    color: #FFA500;
+}
+.dropdown-item:hover, .nav-link:hover, .nav-link:focus{
+    background: #FFA500 !important;
+    color: white !important;
+}
+.nav-item.dropdown:hover .service-nav {
+    background: #FFA500 !important;
+    color: white !important;
+}
+footer{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #343434;
+}
+body{
+    background: radial-gradient(circle, rgba(197, 153, 95, 0.716) 0%, rgb(130, 64, 17) 100%);
+}
+.one{
+    background: #343434;
+    /* background: rgb(0, 0, 0, 0.3); */
+}
+.autoblur{
+    animation: autoblurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoblurAnimation{
+    0%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+    20%, 60%{
+        filter: blur(0);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+}
+.kkk{
+    display: flex;
+}
+.car{
+    width: 65vw !important;
+}
+.car-high{
+    display: flex !important;
+}
+.car-left{
+    width: 35vw;
+    background: #343434;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+.call-btn{
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.call-icon{
+    margin-top: 0;
+}
+.call-btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 10px; 
+    gap: 10px;
+}
+.call-btns{
+    display: flex;
+    gap: 1rem;
+}
+.call-btn:hover{
+    transform: scale(1.06);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.service-details{
+    color: white;
+    background: rgb(52, 52, 52, 0.35);
+    padding: 2rem;
+    border-radius: 3rem;
+}
+.social-logo:hover{
+    transform: scale(1.08);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
