@@ -19,7 +19,7 @@ a{
     right: 0%;
     width: 100%;
     margin-bottom: 0;
-    color: white;
+    color: rgb(92, 217, 215);
     height: 2.5rem;
     display: flex;
     justify-content: flex-end;
@@ -108,13 +108,15 @@ main{
 }
 .dropdown-item{
     color: #FFA500;
+    color: white;
 }
 .dropdown-item:hover, .nav-link:hover, .nav-link:focus{
     background: #FFA500 !important;
+    background: rgb(92, 217, 215) !important;
     color: white !important;
-}
-.nav-item.dropdown:hover .service-nav {
+}nav-item.dropdown:hover .service-nav {
     background: #FFA500 !important;
+    background: rgb(92, 217, 215) !important;
     color: white !important;
 }
 footer{
@@ -123,7 +125,7 @@ footer{
     background: #343434;
 }
 body{
-    background: radial-gradient(circle, rgb(174, 234, 233,0.5) 30%, rgb(92, 217, 215) 100%);
+    background: radial-gradient(circle, rgb(174, 234, 233,0.6) 30%, rgb(92, 217, 215) 100%);
 }
 .one{
     background: #343434;
@@ -167,7 +169,12 @@ body{
     outline: none;
     border: none;
     border-radius: 12px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+    background: #0d6efd;
+}
+.call-us{
+    color: #0d6efd !important;
+    font-size: 2rem;
 }
 .call-icon{
     margin-top: 0;
@@ -223,4 +230,17 @@ body{
 }
 .card-body{    
     background-size: cover;
+}
+.car-heading{
+    color: #0d6efd;
+    color: white;
+    font-size: 2rem;
+}
+.footer-whole{
+    display: flex;
+    justify-content: space-around;
+}
+.services-we-offer{
+    color: #343434;
+    font-weight: 700;
 }
