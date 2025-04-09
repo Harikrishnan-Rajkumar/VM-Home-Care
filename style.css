@@ -11,9 +11,20 @@ a{
     gap: 2rem;
 }
 .card-title{
-    font-size: 1.8rem;
-    padding-top: 10vw;
+    font-size: 1.5rem;
     text-align: right;
+    background-color: black;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    margin-bottom: 0;
+    color: white;
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 0.3rem;
 }
 .c-img{
     height: 75vh;
@@ -47,13 +58,10 @@ a{
 .card{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 13.5rem;
+    position: relative;
 }
 .card:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    .card-title{        
-        color: red;
-        font-size: 1.9rem;
-    }
 }
 .nav-link{
     color: white;
@@ -196,4 +204,12 @@ body{
 }
 .leaflet-control-attribution{
     visibility: hidden;
+}
+.homenurse-card{
+    background-image: url(home-nursing-img.jpg);
+    background-size: cover;
+}
+.card{
+    overflow: hidden;
+    border: none;
 }
