@@ -98,7 +98,7 @@ nav-item.dropdown:hover .service-nav {
 .card-body{
     width: 100%;
     aspect-ratio: 3/2;
-    background: red;
+    background: grey;
     position: relative;
     overflow: hidden;
     
