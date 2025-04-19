@@ -1,100 +1,35 @@
 body{
     overflow-x: hidden;
+    background: radial-gradient(circle, rgb(174, 234, 233,0.6) 30%, rgb(92, 217, 215) 100%);;
 }
+
 a{
     text-decoration: none;
     color: inherit;
 }
-.jobs-card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.navbar{    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.card-title{
-    font-size: 1.5rem;
-    text-align: right;
-    background-color: black;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 100%;
-    margin-bottom: 0;
-    color: rgb(92, 217, 215);
-    height: 2.5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-inline: 0.4rem;
+.navbar-brand{
 }
-.c-img{
-    height: 75vh;
-    width: 100vw;
-    background-size: cover;
-    background-position: center center;
+.navbar-logo{
+    position: relative;
+    width: 1.25rem;
+    top: 0;
+    transform: translateY(-37%);
 }
-.c1{    
-    background-image: url(1738256713304.jpg);
+.logo-vm{
+    color: #0d6efd;
+    font-style: italic;
 }
-.c2{
-    background-image: url(1741880652907.jpg);
-    background-position: center top;
+.navbar-dark{    
+    background: rgb(52, 52, 52);
 }
-.c3{
-    background-image: url(c301.png);
-    background-position: center top;
-}
-.carousel-inner {
-    display: flex;
-    overflow: hidden;
-}
-.carousel-item {
-    transition: transform 1s ease-out;
-    flex-shrink: 0;  
-    width: 100%;    
-  }
 .navbar-nav{
     margin-left: auto;
 }
-.card{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    height: 13.5rem;
-    position: relative;
-}
-.card:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
 .nav-link{
-    color: white;
-}
-main{
-    padding-top: 10vh;
-}
-.jobs-card{
-    padding-top: 5vh;
-}
-.social-links-container{
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-.social-title{
-    text-align: center;
     color: #ffffff;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-}
-.whatsapp-floating-container{
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 1000;
-    background: #25D366;
-    padding: 0.7rem;
-    border-radius: 50%;
-}
-.whatsapp-floating-container:hover{
-    transform: scale(1.1);
 }
 .navbar .dropdown-menu {
     display: none;
@@ -107,62 +42,124 @@ main{
     opacity: 1;
 }
 .dropdown-item{
-    color: #FFA500;
     color: white;
 }
 .dropdown-item:hover, .nav-link:hover, .nav-link:focus{
     background: #FFA500 !important;
     background: rgb(92, 217, 215) !important;
     color: white !important;
-}nav-item.dropdown:hover .service-nav {
+}
+nav-item.dropdown:hover .service-nav {
     background: #FFA500 !important;
     background: rgb(92, 217, 215) !important;
     color: white !important;
 }
-footer{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+.carousal-left-body{
     background: #343434;
-}
-body{
-    background: radial-gradient(circle, rgb(174, 234, 233,0.6) 30%, rgb(92, 217, 215) 100%);
-}
-.one{
-    background: #343434;
-    /* background: rgb(0, 0, 0, 0.3); */
-}
-.autoblur{
-    animation: autoblurAnimation linear both;
-    animation-timeline: view();
-}
-@keyframes autoblurAnimation{
-    0%{
-        filter: blur(40px);
-        opacity: 0;
-    }
-    20%, 60%{
-        filter: blur(0);
-        opacity: 1;
-    }
-    100%{
-        filter: blur(40px);
-        opacity: 0;
-    }
-}
-.kkk{
+    height: 75vh;   
+    padding-inline: 2rem;
+    
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end !important;
+    padding-right: calc(2rem + 2.8vw);
 }
-.car{
-    width: 65vw !important;
+.carousal-right-body{
+    padding: 0;
 }
-.car-high{
-    display: flex !important;
+.c-img{
+    height: 75vh;
+    background: grey;
+    background-size: cover;
+    background-position: top center;
 }
-.car-left{
-    width: 35vw;
-    background: #343434;
-    padding: 2rem;
-    padding-top: 4rem;
+.c1{
+    background-image: url(c1.jpg);
+}
+.c2{
+    background-image: url(c2.jpg);
+}
+.c3{
+    background-image: url(c3.png);
+}
+.services-we-offer{
+    color: black;
+}
+.jobs-card{
+    padding: 12px;
+}
+.jobs-card:hover{
+    transform: scale(1.02);
+    .card-body{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+}
+.card-body{
+    width: 100%;
+    aspect-ratio: 3/2;
+    background: red;
+    position: relative;
+    overflow: hidden;
+    
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: top center;
+    border: 2px solid black;
+}
+.card-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    background: black;
+    color: rgb(92, 217, 215);
+    
+    padding-inline: 0.4rem;
+    font-size: 1.5rem;
+    padding-block: 0.3rem;
+}
+.carousel-left-heading{
+    text-align: right;
+    font-size: 2.2rem;
+}
+.social-links-container{
+    display: flex;
+    justify-content: center;
+}
+
+#map{
+    height: 50vh;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.leaflet-control-attribution{
+    visibility: hidden;
+}
+.homenurse-card{
+    background-image: url(home-nursing-img.jpg);
+}
+.caretaking-card{
+    background-image: url(caretaking.png);
+    background-position: center center;
+
+}
+.housecleaning-card{
+    background-image: url(homecleaning.png);
+    background-position: bottom center;
+}
+.Cooking-card{
+    background-image: url(cooking.png);
+
+}
+.babysitting-card{
+    background-image: url(babysitting-img.png);
+}
+.watchman-card{
+    background-image: url(watchman-img.png);
+}
+.drivers-card{
+    background-image: url(driver-img.png);
 }
 .call-btn{
     color: white;
@@ -174,7 +171,7 @@ body{
 }
 .call-us{
     color: #0d6efd !important;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .call-icon{
     margin-top: 0;
@@ -194,53 +191,15 @@ body{
     transform: scale(1.06);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.service-details{
-    color: white;
-    background: rgb(52, 52, 52, 0.35);
-    padding: 2rem;
-    border-radius: 3rem;
+.whatsapp-floating-container{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+    background: #25D366;
+    padding: 0.7rem;
+    border-radius: 50%;
 }
-.social-logo:hover{
-    transform: scale(1.08);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-#map{
-    height: 50vh;
-    width: 40vw;
-    border-radius: 1.5rem;
-}
-.leaflet-control-attribution{
-    visibility: hidden;
-}
-.homenurse-card{
-    background-image: url(home-nursing-img.jpg);
-}
-.caretaking-card{
-    background-image: url(caretaking-img.png);
-}
-.watchman-card{
-    background-image: url(watchman-img.png);
-}
-.driver-card{
-    background-image: url(driver-img.png);
-}
-.card{
-    overflow: hidden;
-    border: none;
-}
-.card-body{    
-    background-size: cover;
-}
-.car-heading{
-    color: #0d6efd;
-    color: white;
-    font-size: 2rem;
-}
-.footer-whole{
-    display: flex;
-    justify-content: space-around;
-}
-.services-we-offer{
-    color: #343434;
-    font-weight: 700;
+.whatsapp-floating-container:hover{
+    transform: scale(1.1);
 }
