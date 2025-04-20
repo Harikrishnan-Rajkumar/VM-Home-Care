@@ -1,16 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
-    background: radial-gradient(circle, rgb(174, 234, 233,0.6) 30%, rgb(92, 217, 215) 100%);;
 }
-
+main{
+    background: radial-gradient(circle, rgb(174, 234, 233,0.6) 30%, rgb(90, 221, 218) 100%), url(leather.png);
+    background-blend-mode: luminosity;
+    background-repeat: repeat;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
 a{
     text-decoration: none;
     color: inherit;
-}
-.navbar{    
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.navbar-brand{
 }
 .navbar-logo{
     position: relative;
@@ -19,11 +22,12 @@ a{
     transform: translateY(-37%);
 }
 .logo-vm{
-    color: #0d6efd;
+    color: #ffffff;
     font-style: italic;
 }
 .navbar-dark{    
-    background: rgb(52, 52, 52);
+    background: rgb(52, 52, 52, 0.5);
+    backdrop-filter: blur(0.5rem);
 }
 .navbar-nav{
     margin-left: auto;
@@ -40,6 +44,10 @@ a{
     display: block;
     background: #212529;
     opacity: 1;
+}
+.dropdown-menu{
+    background: rgb(52, 52, 52, 0.5) !important;
+    backdrop-filter: blur(0.5rem);
 }
 .dropdown-item{
     color: white;
@@ -75,13 +83,16 @@ nav-item.dropdown:hover .service-nav {
     background-position: top center;
 }
 .c1{
-    background-image: url(c1.jpg);
+    background-image: url(c1.webp);
 }
 .c2{
-    background-image: url(c2.jpg);
+    background-image: url(c2.webp);
 }
 .c3{
-    background-image: url(c3.png);
+    background-image: url(c3.webp);
+}
+.carousal-area{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
 }
 .services-we-offer{
     color: black;
@@ -117,17 +128,39 @@ nav-item.dropdown:hover .service-nav {
     
     padding-inline: 0.4rem;
     font-size: 1.5rem;
-    padding-block: 0.3rem;
+    padding-block: 0.33rem;
 }
 .carousel-left-heading{
     text-align: right;
     font-size: 2.2rem;
 }
+.footer-section{
+    padding-inline: 10vw;
+}
 .social-links-container{
     display: flex;
-    justify-content: center;
+    gap: 1rem;
+    justify-content: flex-start;
 }
-
+.social-logo a{
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+}
+.social-logo svg{
+    height: 100%;
+    width: 100%;
+}
+.x-logo-container>a>svg{
+    transform: scale(0.8);
+}
+.social-logo svg:hover{
+    transform: scale(1.1);
+}
+.x-logo-container>a>svg:hover{
+    transform: scale(0.9);
+}{}
 #map{
     height: 50vh;
     width: 100%;
@@ -137,29 +170,28 @@ nav-item.dropdown:hover .service-nav {
     visibility: hidden;
 }
 .homenurse-card{
-    background-image: url(home-nursing-img.jpg);
+    background-image: url(home-nursing-img.webp);
 }
 .caretaking-card{
-    background-image: url(caretaking.png);
+    background-image: url(caretaking.webp);
     background-position: center center;
-
 }
 .housecleaning-card{
-    background-image: url(homecleaning.png);
+    background-image: url(homecleaning.webp);
     background-position: bottom center;
 }
 .Cooking-card{
-    background-image: url(cooking.png);
+    background-image: url(cooking.webp);
 
 }
 .babysitting-card{
-    background-image: url(babysitting-img.png);
+    background-image: url(babysitting-img.webp);
 }
 .watchman-card{
-    background-image: url(watchman-img.png);
+    background-image: url(watchman-img.webp);
 }
 .drivers-card{
-    background-image: url(driver-img.png);
+    background-image: url(driver-img.webp);
 }
 .call-btn{
     color: white;
@@ -199,7 +231,48 @@ nav-item.dropdown:hover .service-nav {
     background: #25D366;
     padding: 0.7rem;
     border-radius: 50%;
+    z-index: 999;
 }
 .whatsapp-floating-container:hover{
     transform: scale(1.1);
+}
+.floating-whatsapp-a{
+    position: relative;
+    z-index: 999;
+}
+.whatsapp-floating-container:before,
+.whatsapp-floating-container:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 3px #28D146;
+  border-radius: 50%;
+  filter: blur(1px);
+  z-index: 995;
+}
+
+.whatsapp-floating-container:before {
+  animation: ripple 2s linear infinite;
+}
+
+.whatsapp-floating-container:after {
+  animation: ripple 2s 1s linear infinite;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767.98px) {    
+.c-img{
+    height: 50vh;
+    background-size: cover;
+    background-position: top center;
+}
 }
