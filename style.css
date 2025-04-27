@@ -29,11 +29,15 @@ a{
     background: rgb(52, 52, 52, 0.5);
     backdrop-filter: blur(0.5rem);
 }
+.navbar{
+    padding-inline: 1.75vw !important;
+}
 .navbar-nav{
     margin-left: auto;
 }
 .nav-link{
     color: #ffffff;
+    padding-inline: 8px !important;
 }
 .navbar .dropdown-menu {
     display: none;
@@ -47,20 +51,39 @@ a{
 }
 .dropdown-menu{
     background: rgb(52, 52, 52, 0.5) !important;
-    backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(20rem) !important;
+    padding-inline: 6px;
+}
+hr{
+    padding-block: 0px !important;
+    margin-block: 0px !important;
+    border: none; /* Remove default */
+    border-top: 2px solid rgb(255, 255, 255, 0.5); /* Set your color */
 }
 .dropdown-item{
     color: white;
+    border-radius: calc(0.15vw + 1.5px);
+    padding-block: 6px !important;
 }
-.dropdown-item:hover, .nav-link:hover, .nav-link:focus{
+.dropdown-item:hover{
+    background: rgb(92, 217, 215, 0.7) !important;
+    color: white !important;
+    font-weight: 600;
+}
+.nav-link:hover, .nav-link:focus{
     background: #FFA500 !important;
     background: rgb(92, 217, 215) !important;
     color: white !important;
+    font-weight: 600;
 }
-nav-item.dropdown:hover .service-nav {
+.nav-item.dropdown:hover .service-nav {
     background: #FFA500 !important;
     background: rgb(92, 217, 215) !important;
     color: white !important;
+    font-weight: 600;
+}
+.dropdown-menu{
+    backdrop-filter: blur(0.5rem);
 }
 .carousal-left-body{
     background: #343434;
@@ -136,6 +159,11 @@ nav-item.dropdown:hover .service-nav {
 }
 .footer-section{
     padding-inline: 10vw;
+    background: #343434;
+}
+.ft-heading{
+    color: #ffffff;
+    font-size: 1.9rem;
 }
 .social-links-container{
     display: flex;
@@ -160,7 +188,7 @@ nav-item.dropdown:hover .service-nav {
 }
 .x-logo-container>a>svg:hover{
     transform: scale(0.9);
-}{}
+}
 #map{
     height: 50vh;
     width: 100%;
@@ -262,17 +290,58 @@ nav-item.dropdown:hover .service-nav {
   animation: ripple 2s 1s linear infinite;
 }
 
+h6{
+    font-size: clamp(13.5px, 1.35vw, 50px) !important;
+}
+.ft-call-btns{
+    gap: calc(0.8vw + 4px);
+}
+.ft-call-btn{
+    font-size: clamp(13.5px, 1.35vw, 50px) !important;
+    border-radius: calc(0.35vw + 5px);
+    padding: calc(0.4vw + 4px);
+}
+.ft-call-btn > svg {
+    width: clamp(13.5px, 1.35vw, 50px);
+    height: clamp(13.5px, 1.35vw, 50px);
+}
+.landmark{
+    font-style: italic;
+}
+.location-side{
+    padding: 5vw;
+    padding-top: 0;
+}
 @keyframes ripple {
   to {
     transform: scale(1.75);
     opacity: 0;
   }
 }
-
-@media (max-width: 767.98px) {    
-.c-img{
-    height: 50vh;
-    background-size: cover;
-    background-position: top center;
+@media (max-width: 1199.98px) {
+    h6{
+        font-size: clamp(1rem,2vw,50px) !important;
+    }
+    .ft-call-btn{
+        font-size: clamp(1rem,2vw,50px) !important;
+        padding: calc(0.4vw + 6px);
+    }    
+    .ft-call-btn > svg {
+        width: clamp(1rem,2vw,50px);
+        height: clamp(1rem,2vw,50px);
+    }
+    .ft-call-btns{
+        gap: calc(1.5vw + 8px);
+        flex-direction: column;
+    }
+    .ft-heading{
+        font-size: 2rem;
+    }
 }
+@media (max-width: 767.98px) {    
+    .c-img{
+        height: 50vh;
+        background-size: cover;
+        background-position: top center;
+    }
 }
