@@ -150,8 +150,8 @@ hr{
     color: rgb(92, 217, 215);
     
     padding-inline: 0.4rem;
-    font-size: 1.5rem;
-    padding-block: 0.33rem;
+    font-size: 1.25rem;
+    padding-block: 0.4rem;
 }
 .carousel-left-heading{
     text-align: right;
@@ -163,6 +163,7 @@ hr{
 }
 .ft-heading{
     color: #ffffff;
+    color: rgb(92, 217, 215);
     font-size: 1.9rem;
 }
 .social-links-container{
